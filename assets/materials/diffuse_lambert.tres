@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://c0as33q70g38u"]
+
+[ext_resource type="Shader" uid="uid://dtnv3atgw0o3c" path="res://assets/materials/shaders/diffuse_lambert.tres" id="1_50bgh"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_50bgh")
