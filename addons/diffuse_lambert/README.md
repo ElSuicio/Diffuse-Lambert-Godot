@@ -9,22 +9,21 @@ This is an addon for Godot 4.4+ that adds the `Lambert` node to the visual shade
 
 <div align="center"> Lambert Diffuse Reflectance Model (Node). </div>
 
+<br>
 
 <div align="center">
 
-![LambertRender](https://github.com/ElSuicio/Diffuse-Lambert-Godot/blob/9ff4fda330d6fd9b877972bdf675c5714376108c/render/Lambert.png)
+![LambertRender](https://github.com/ElSuicio/Diffuse-Lambert-Godot/blob/aa8fad7025bdbc1b1392ade3e478faa9812acf49/render/1920x1080/Lambert.png)
 
 </div>
 
 <div align="center"> Lambert Diffuse Reflectance Model (Render). </div>
 
-
-
 # Links & Support
 - [itch.io](https://interdreamsoft.itch.io/)
-- [x.com](x.com/ElSuicio)
+- [x.com](https://x.com/ElSuicio)
 
-If you liked it and want to support it, you can donate via [PayPal](https://www.paypal.com/donate/?hosted_button_id=NRD94T2N7XZ6J) . Your support is very much appreciated and helps me keep going!
+If you liked it and want to support it, you can donate via [PayPal](https://www.paypal.com/donate/?hosted_button_id=NRD94T2N7XZ6J) or [ItchIo](https://interdreamsoft.itch.io/lambert-light-model) . Your support is very much appreciated and helps me keep going!
 
 
 [ Contact Email: interdreamsoft@gmail.com ]
