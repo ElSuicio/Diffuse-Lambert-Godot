@@ -28,7 +28,7 @@ func _is_available(mode : Shader.Mode, type : VisualShader.Type) -> bool:
 
 #region Input
 func _get_input_port_count() -> int:
-	return 5
+	return 4
 
 func _get_input_port_name(port : int) -> String:
 	match port:
@@ -37,10 +37,8 @@ func _get_input_port_name(port : int) -> String:
 		1:
 			return "Light"
 		2:
-			return "Diffuse Color"
-		3:
 			return "Light Color"
-		4:
+		3:
 			return "Attenuation"
 	
 	return ""
@@ -52,10 +50,8 @@ func _get_input_port_type(port : int) -> PortType:
 		1:
 			return PORT_TYPE_VECTOR_3D # Light.
 		2:
-			return PORT_TYPE_VECTOR_3D # Albedo.
-		3:
 			return PORT_TYPE_VECTOR_3D # Light Color.
-		4:
+		3:
 			return PORT_TYPE_SCALAR # Attenuation.
 	
 	return PORT_TYPE_SCALAR
@@ -71,13 +67,13 @@ func _get_output_port_name(_port : int) -> String:
 
 func _get_output_port_type(_port : int) -> PortType:
 	return PORT_TYPE_VECTOR_3D
+
 #endregion
 
 func _get_code(input_vars : Array[String], output_vars : Array[String], _mode : Shader.Mode, _type : VisualShader.Type) -> String:
 	var default_vars : Array[String] = [
 		"NORMAL",
 		"LIGHT",
-		"ALBEDO",
 		"LIGHT_COLOR",
 		"ATTENUATION"
 		]
@@ -95,14 +91,13 @@ func _get_code(input_vars : Array[String], output_vars : Array[String], _mode : 
 	float NdotL = dot(n, l); // [-1.0, 1.0].
 	float cNdotL = max(NdotL, 0.0); // [0.0, 1.0].
 	
-	{output} = {albedo} * {light_color} * {attenuation} * cNdotL * INV_PI;
+	{output} = {light_color} * {attenuation} * cNdotL * INV_PI;
 	"""
 	
 	return shader.format({
 		"normal" : input_vars[0],
 		"light" : input_vars[1],
-		"albedo" : input_vars[2],
-		"light_color" : input_vars[3],
-		"attenuation" : input_vars[4],
+		"light_color" : input_vars[2],
+		"attenuation" : input_vars[3],
 		"output" : output_vars[0]
 		})
