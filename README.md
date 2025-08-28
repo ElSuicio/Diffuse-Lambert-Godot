@@ -9,6 +9,7 @@ This is an addon for Godot 4.4+ that adds the `Lambert` node to the visual shade
 
 <div align="center"> Lambert Diffuse Reflectance Model (Node). </div>
 
+<br>
 
 <div align="center">
 
@@ -17,8 +18,6 @@ This is an addon for Godot 4.4+ that adds the `Lambert` node to the visual shade
 </div>
 
 <div align="center"> Lambert Diffuse Reflectance Model (Render). </div>
-
-
 
 # Links & Support
 - [itch.io](https://interdreamsoft.itch.io/)
