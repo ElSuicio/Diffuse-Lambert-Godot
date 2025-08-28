@@ -13,7 +13,7 @@ This is an addon for Godot 4.4+ that adds the `Lambert` node to the visual shade
 
 <div align="center">
 
-![LambertRender](https://github.com/ElSuicio/Diffuse-Lambert-Godot/blob/aa8fad7025bdbc1b1392ade3e478faa9812acf49/render/1920x1080/Lambert.png).
+![LambertRender](https://github.com/ElSuicio/Diffuse-Lambert-Godot/blob/aa8fad7025bdbc1b1392ade3e478faa9812acf49/render/1920x1080/Lambert.png)
 
 </div>
 
