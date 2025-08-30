@@ -1,9 +1,9 @@
-[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://c0as33q70g38u"]
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bpnc760t2scfa"]
 
-[ext_resource type="Shader" uid="uid://dtnv3atgw0o3c" path="res://assets/materials/shaders/diffuse_lambert.tres" id="1_50bgh"]
+[ext_resource type="Shader" uid="uid://du8mjxfhajryo" path="res://assets/materials/shaders/DiffuseLambert.tres" id="1_mo2vk"]
 
 [resource]
 render_priority = 0
-shader = ExtResource("1_50bgh")
-shader_parameter/ColorParameter = Color(1, 1, 1, 1)
+shader = ExtResource("1_mo2vk")
+shader_parameter/AlbedoColor = Color(1, 1, 1, 1)
 shader_parameter/Roughness = 1.0
