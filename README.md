@@ -1,21 +1,27 @@
 # Diffuse Lambert - Godot
 This is an addon for Godot 4.4+ that adds the `Lambert` node to the visual shader system. This node outputs the `Diffuse Light` based on the `Lambertian reflectance model`.
 
+<br>
+
 <div align="center">
   
-![LambertNode](https://raw.githubusercontent.com/ElSuicio/Diffuse-Lambert-Godot/refs/heads/main/LambertNode.png)
+<img src = "https://raw.githubusercontent.com/ElSuicio/Diffuse-Lambert-Godot/refs/heads/main/LambertNode.png" alt = "LambertNode.">
 
 </div>
+
+<br>
 
 <div align="center"> Lambert Diffuse Reflectance Model (Node). </div>
 
 <br>
 
 <div align="center">
-
-![LambertRender](https://raw.githubusercontent.com/ElSuicio/Diffuse-Lambert-Godot/refs/heads/main/render/1152x648/Lambert.png)
+  
+<img src = "https://raw.githubusercontent.com/ElSuicio/Diffuse-Lambert-Godot/refs/heads/main/render/1152x648/Lambert.png" alt = "LambertRender.">
 
 </div>
+
+<br>
 
 <div align="center"> Lambert Diffuse Reflectance Model (Render). </div>
 
