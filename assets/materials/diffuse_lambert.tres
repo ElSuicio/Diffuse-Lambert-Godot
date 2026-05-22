@@ -1,6 +1,6 @@
-[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bpnc760t2scfa"]
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bpnc760t2scfa"]
 
-[ext_resource type="Shader" uid="uid://du8mjxfhajryo" path="res://assets/materials/shaders/DiffuseLambert.tres" id="1_mo2vk"]
+[ext_resource type="Shader" uid="uid://du8mjxfhajryo" path="res://addons/diffuse_lambert/materials/shaders/DiffuseLambert.tres" id="1_mo2vk"]
 
 [resource]
 render_priority = 0

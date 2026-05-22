@@ -2,8 +2,8 @@
 extends VisualShaderNodeCustom
 class_name VisualShaderNodeDiffuseLambert
 
-# CC0 1.0 Universal, ElSuicio, 2025.
-# GODOT v4.4.1.stable.
+# CC0 1.0 Universal, ElSuicio, 2026.
+# GODOT v4.6.2.stable.
 # x.com/ElSuicio
 # github.com/ElSuicio
 # Contact email [interdreamsoft@gmail.com]
@@ -83,15 +83,19 @@ func _get_code(input_vars : Array[String], output_vars : Array[String], _mode : 
 			input_vars[i] = default_vars[i]
 	
 	var shader : String = """
-	const float INV_PI = 0.318309;
+	const float INV_PI = 0.31830988618379067154;
 	
 	vec3 n = normalize( {normal} );
 	vec3 l = normalize( {light} );
 	
-	float NdotL = dot(n, l); // [-1.0, 1.0].
-	float cNdotL = max(NdotL, 0.0); // [0.0, 1.0].
+	float NdotL = dot(n, l); // cos(theta_l) == cos(theta_i).
 	
-	{output} = {light_color} * {attenuation} * cNdotL * INV_PI;
+	if (NdotL >= 0.0) {
+		{output} = {light_color} * {attenuation} * NdotL * INV_PI;
+	}
+	else {
+		{output} = vec3(0.0);
+	}
 	"""
 	
 	return shader.format({
